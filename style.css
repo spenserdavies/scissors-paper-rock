@@ -1,0 +1,15 @@
+.text-shadow{
+  text-shadow: 1px 1px black;
+}
+
+#status{
+  border-radius: 1em;
+}
+
+
+
+
+
+.hidden{
+  display: none;
+}

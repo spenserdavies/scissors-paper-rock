@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/68f8809237.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-light">
+
+  <header class="container-fluid bg-dark text-center text-light py-2">
+    <div class="row">
+      <div class="col-3 m-auto">
+        <h4>R</h4>
+      </div>
+      <div class="col-3 m-auto">
+        <h4>P</h4>
+      </div>
+      <div class="col-3 m-auto">
+        <h4>S</h4>
+      </div>
+    </div>
+
+  </header>
+
+
+  <main class="container text-center py-2">
+    <div id="guide" class="row mt-5 mb-5">
+      <div class="col-3 card m-auto py-2">
+        <h3><i class="far fa-hand-rock"></i></h3>
+        <h4>ROCK</h4>
+        <hr>
+        <p>Wins Against: Scissors</p>
+        <p>Loses Against: Paper</p>
+        <button id="rock" class="btn btn-dark" onclick="game('rock')">PICK ROCK</button>
+      </div>
+      <div class="col-3 card m-auto py-2">
+        <h3><i class="far fa-hand-paper"></i></h3>
+        <h4>PAPER</h4>
+        <hr>
+        <p>Wins Against: Rock</p>
+        <p>Loses Against: Scissors</p>
+        <button id="paper" class="btn btn-dark" onclick="game('paper')">PICK PAPER</button>
+      </div>
+      <div class="col-3 card m-auto py-2">
+        <h3><i class="far fa-hand-scissors"></i></h3>
+        <h4>SCISSORS</h4>
+        <hr>
+        <p>Wins Against: Paper</p>
+        <p>Loses Against: Rock</p>
+        <button id="scissors" class="btn btn-dark" onclick="game('scissors')">PICK SCISSORS</button>
+      </div>
+
+    </div>
+
+    <div id="gameCard" class="row mt-3 align-items-center">
+      <div  class="col-6">
+      <!-- this is where the playerPick template will go -->
+          <h3 id="playerPick"></h3>
+          
+      </div>
+
+      <!-- <div id="shootButton" class="col-2">
+          <button class="btn btn-success" onclick="shoot()">shoot</button>
+      </div> -->
+
+      <div class="col-6">
+        <!-- this is where the jsPick template will go -->
+          <h3 id="jsPick"></h3>
+      </div>
+    </div>
+    <div class="row mt-5">
+
+      <div id="status" class="hidden col-6 m-auto bg-warning">
+          <h1 id="statusText" class="text-light text-shadow">You Win /Lose / Its a Draw!</h1>
+      </div>
+    </div>
+
+      <div class="row mt-2">
+        <div class="col-12 m-auto  text-center">
+          <h2>Wins: <span id="userWins">0</span></h2>
+          <h3>Losses: <span id="userLosses">0</span></h3>
+          <h3>Ties: <span id="userTies">0</span></h3>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+    </div>
+
+  </main>
+
+
+  <footer>
+
+  </footer>
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
